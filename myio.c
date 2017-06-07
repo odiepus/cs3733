@@ -55,7 +55,17 @@ double ReadDouble(void){
 		}
 }
 
-//Retrieved from https://stackoverflow.com/questions/314401/how-to-read-a-line-from-the-console-in-c
+
+char *ReadLine(void){
+
+
+
+}
+
+
+//This is not my code. I found this on stack overflow having once used it before.
+//Retrieved from
+//https://stackoverflow.com/questions/314401/how-to-read-a-line-from-the-console-in-c
 char * getLine(void) {
 	char * line = malloc(100), * linep = line;
 	size_t lenmax = 100, len = lenmax;
@@ -89,6 +99,8 @@ char * getLine(void) {
 	return linep;
 }
 
+//used a piece of getLine()
+//to get the count of chars I am searching for
 int getLength(char *line){
 	int c, i = 0;
 	char *temp = line;
