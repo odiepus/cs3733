@@ -1,0 +1,144 @@
+
+
+FCFS
+RwRRRR
+rRwwwrR
+0 2 1.0 1.00000
+
+
+SJF
+RwR
+rRwwwRRRR
+0 1 0.5 0.77778
+
+
+PSJF
+RwRRRR
+rRwwwrR
+0 2 1.0 1.00000
+
+
+RR
+RwRrrrRRR
+rrrRwwwrrR
+3 5 4.0 0.70000
+
+
+FCFS
+RRRRRRRRwwwwwwwRRR
+rrrrrrrrRRRRRRwwwwwwwRR
+0 8 4.0 0.82609
+
+
+SJF
+rrrrrrRRRRRRRRwwwwwwwRRR
+RRRRRRwwwwwwwrRR
+6 1 3.5 0.79167
+
+
+PSJF
+rrrrrrRRRRRRRRwwwwwwwRRR
+RRRRRRwwwwwwwrRR
+6 1 3.5 0.79167
+
+
+FCFS
+RRRRRRRRwwwwwwwRRR
+rrrrrrrrRRRRRRwwwwwwwRR
+0 8 4.0 0.82609
+
+
+SJF
+rrrrrrRRRRRRRRwwwwwwwRRR
+RRRRRRwwwwwwwrRR
+6 1 3.5 0.79167
+
+
+PSJF
+rrrrrrRRRRRRRRwwwwwwwRRR
+RRRRRRwwwwwwwrRR
+6 1 3.5 0.79167
+
+
+FCFS
+RRRRRRRRwwwwwwwRRR
+rrrrrrrrRRRRRRwwwwwwwRR
+0 8 4.0 0.82609
+
+
+SJF
+rrrrrrRRRRRRRRwwwwwwwRRR
+RRRRRRwwwwwwwrRR
+6 1 3.5 0.79167
+
+
+PSJF
+rrrrrrRRRRRRRRwwwwwwwRRR
+RRRRRRwwwwwwwrRR
+6 1 3.5 0.79167
+
+
+RR
+RRRrrrRRRrrrRRwwwwwwwRRR
+rrrRRRrrrRRRwwwwwwwRR
+6 6 6.0 0.79167
+
+
+FCFS
+RRRRRRRRwwwwwwwRRR
+rrrrrrrrRRRRRRwwwwwwwRR
+0 8 4.0 0.82609
+
+
+SJF
+rrrrrrRRRRRRRRwwwwwwwRRR
+RRRRRRwwwwwwwrRR
+6 1 3.5 0.79167
+
+
+PSJF
+rrrrrrRRRRRRRRwwwwwwwRRR
+RRRRRRwwwwwwwrRR
+6 1 3.5 0.79167
+
+
+RR
+RRRrrrRRRrrrRRwwwwwwwRRR
+rrrRRRrrrRRRwwwwwwwRR
+6 6 6.0 0.79167
+
+
+FCFS
+Values: 3, 8, 7, 3, 6, 7, 2RRRRRRRRwwwwwwwRRR
+rrrrrrrrRRRRRRwwwwwwwRR
+0 8 4.0 0.82609
+
+
+SJF
+Values: 3, 8, 7, 3, 6, 7, 2rrrrrrRRRRRRRRwwwwwwwRRR
+RRRRRRwwwwwwwrRR
+6 1 3.5 0.79167
+
+
+PSJF
+Values: 3, 8, 7, 3, 6, 7, 2rrrrrrRRRRRRRRwwwwwwwRRR
+RRRRRRwwwwwwwrRR
+6 1 3.5 0.79167
+
+
+RR
+Values: 3, 8, 7, 3, 6, 7, 2RRRrrrRRRrrrRRwwwwwwwRRR
+rrrRRRrrrRRRwwwwwwwRR
+6 6 6.0 0.79167
+
+Assignment 1 program written by Hector Herrera
+Values: 3 3 3 4 2 1 2
+
+Assignment 1 program written by Hector Herrera
+Values: 3 3 3 4 2 1 2
+
+
+RR
+RRRwwwrrRRRR
+rrrRRwRR
+2 3 2.5 0.91667
