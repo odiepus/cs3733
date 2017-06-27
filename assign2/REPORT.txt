@@ -1,5 +1,27 @@
+REPORT QUESTIONS:
 
-Assignment 1 program written by Hector Herrera
+1. Solo
+
+2. I believe so. I ran all of the given values and made a few up as well. 
+
+3. N/A
+
+4. Using state machine design greatly simplified the code and allowed for 
+   easier modification for use in different algorithms. Once I became familiar
+   with the state machine code for one algorithm I was able to debug much 
+   faster when applying the state machine code for another algorithm. I really 
+   only needed to focus on the edge cases. 
+
+
+   Note: I wasnt sure how you wanted the output to be formatted.
+         I didnt want to turn in a jumbled mess of R's and w's 
+         without reader knowing what the values were. Thus, I 
+         include the values at the start of a value change. 
+
+
+5. Code Output
+
+Assignment 2 program written by Hector Herrera
 Values: 3 8 7 3 6 3 2
 
 
@@ -26,7 +48,7 @@ RRRrrrRRRrrrRRwwwwwwwRRR
 rrrRRRrrrRRRwwwRR
 6 6 6.0 0.79167
 
-Assignment 1 program written by Hector Herrera
+Assignment 2 program written by Hector Herrera
 Values: 3 8 7 3 6 7 2
 
 
@@ -53,7 +75,7 @@ RRRrrrRRRrrrRRwwwwwwwRRR
 rrrRRRrrrRRRwwwwwwwRR
 6 6 6.0 0.79167
 
-Assignment 1 program written by Hector Herrera
+Assignment 2 program written by Hector Herrera
 Values: 4 8 7 3 6 1 2
 
 
@@ -80,7 +102,7 @@ RRRRrrrrRRRRwwwwwwwRRR
 rrrrRRRRrrrrRRwRR
 4 8 6.0 0.86364
 
-Assignment 1 program written by Hector Herrera
+Assignment 2 program written by Hector Herrera
 Values: 3 3 3 4 2 1 2
 
 
@@ -107,7 +129,7 @@ RRRwwwrrRRRR
 rrrRRwRR
 2 3 2.5 0.91667
 
-Assignment 1 program written by Hector Herrera
+Assignment 2 program written by Hector Herrera
 Values: 3 3 2 3 2 1 2
 
 
@@ -134,7 +156,7 @@ RRRwwRrrRR
 rrrRRwRR
 2 3 2.5 1.00000
 
-Assignment 1 program written by Hector Herrera
+Assignment 2 program written by Hector Herrera
 Values: 3 5 2 5 4 1 1
 
 
@@ -160,3 +182,12 @@ RR
 RRRrrrRRwwRRrRRR
 rrrRRRrrrRwrR
 4 7 5.5 0.93750
+
+
+md5sum output
+
+4998a59f278711bc6244f4182714e848  fcfs.all
+48dededb4abb7142b911436242555076  psjf.all
+cbb46cb60ed9d8ddf0e47881b9d72dbd  rr.all
+77f7da53b56c9afcd45148ce7aa0e190  sjf.all
+

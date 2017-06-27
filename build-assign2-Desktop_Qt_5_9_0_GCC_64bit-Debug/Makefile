@@ -52,9 +52,11 @@ OBJECTS_DIR   = ./
 ####### Files
 
 SOURCES       = ../assign2/pslibrary.c \
-		../assign2/assign2.c 
+		../assign2/assign2.c \
+		../assign2/runall.c 
 OBJECTS       = pslibrary.o \
-		assign2.o
+		assign2.o \
+		runall.o
 DIST          = /opt/Qt/5.9/gcc_64/mkspecs/features/spec_pre.prf \
 		/opt/Qt/5.9/gcc_64/mkspecs/common/unix.conf \
 		/opt/Qt/5.9/gcc_64/mkspecs/common/linux.conf \
@@ -230,7 +232,8 @@ DIST          = /opt/Qt/5.9/gcc_64/mkspecs/features/spec_pre.prf \
 		/opt/Qt/5.9/gcc_64/mkspecs/features/yacc.prf \
 		/opt/Qt/5.9/gcc_64/mkspecs/features/lex.prf \
 		../assign2/assign2.pro pslibrary.h ../assign2/pslibrary.c \
-		../assign2/assign2.c
+		../assign2/assign2.c \
+		../assign2/runall.c
 QMAKE_TARGET  = assign2
 DESTDIR       = 
 TARGET        = assign2
@@ -641,6 +644,9 @@ pslibrary.o: ../assign2/pslibrary.c
 
 assign2.o: ../assign2/assign2.c ../assign2/pslibrary.h
 	$(CC) -c $(CFLAGS) $(INCPATH) -o assign2.o ../assign2/assign2.c
+
+runall.o: ../assign2/runall.c 
+	$(CC) -c $(CFLAGS) $(INCPATH) -o runall.o ../assign2/runall.c
 
 ####### Install
 

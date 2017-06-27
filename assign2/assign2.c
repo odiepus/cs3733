@@ -4,7 +4,8 @@
 #include<stdlib.h>
 #include<string.h>
 
-int main(int argc, char *argv[])
+/*
+ * int main(int argc, char *argv[])
 {
     int arraySize = 0;
 
@@ -67,3 +68,4 @@ int main(int argc, char *argv[])
     display("RR\n", str1RR, str2RR);
     return 0;
 }
+*/

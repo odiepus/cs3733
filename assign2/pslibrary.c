@@ -22,7 +22,7 @@ static char stateChars[] = {'r','R','w',0};
 */
 /* assume s1 and s2 point to buffers with enough space to hold the result */
 /* assume that the int parameters are strictly greater than 0 */
-void proto(char *s1, char *s2, int x1, int y1, int z1,
+void fcfs(char *s1, char *s2, int x1, int y1, int z1,
            int x2, int y2, int z2) {
     int i;                                   /* next string position (time) */
     int state1 = READY;                            /* start with both ready */
@@ -285,13 +285,13 @@ void rr(char *s1, char *s2, int q, int x1, int y1, int z1,
 
         if(state1 == DONE){
             swapped = 1;
-            if(k == q){
+            if(k >= q){
                 k = 0;
             }
         }
         if(state2 == DONE){
             swapped = 0;
-            if(k == q){
+            if(k >= q){
                 k = 0;
             }
         }
@@ -345,8 +345,7 @@ void rr(char *s1, char *s2, int q, int x1, int y1, int z1,
             else if(k == 0){
                 state1 = RUNNING;
             }
-        }
-        /* handle one ready and CPU available */
+        } /* handle one ready and CPU available */
         else if ( (state1 == READY ) && state2 != RUNNING && k == q && swapped == 0) {
             state1 = RUNNING;
             k = 0;
@@ -365,10 +364,10 @@ void rr(char *s1, char *s2, int q, int x1, int y1, int z1,
             state2 = READY;
             k = 0;
         }
-        else if(state1 == READY && state2 == DONE){
+        else if(state1 == READY && (state2 == DONE || state2 == WAITING)){
             state1 = RUNNING;
         }
-        else if(state2 == READY && state1 == DONE){
+        else if(state2 == READY && (state1 == DONE || state1 == WAITING)){
             state2 = RUNNING;
         }
 
@@ -474,7 +473,7 @@ void display(char *heading, char *s1, char *s2){
     fclose(fp);
 }
 
-void fcfsa(char *s1, char *s2, int x1, int y1, int z1, int x2, int y2, int z2){
+void fcfsa_assign1(char *s1, char *s2, int x1, int y1, int z1, int x2, int y2, int z2){
     int i = 0, k = 0;
 
     for(; i < x1; i++){
