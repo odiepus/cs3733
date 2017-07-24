@@ -6,8 +6,8 @@ int main() {
 
     FILE *fp;
     FILE *fp2;
-    fp = fopen("part1testsequence", "rb");
-    fp2 = fopen("output.bin", "wb");
+    fp = fopen("part1sequence", "rb");
+    fp2 = fopen("output-part1", "wb");
     if(fp == NULL || fp2 == NULL){
         printf("error\n");
         exit(1);
@@ -15,7 +15,7 @@ int main() {
 
     unsigned long x;
     int bits[4096][64];
-    char pAddress[4096][17];
+    unsigned char pAddress[4096][4];
 
     printf("output:\n");
 
@@ -32,7 +32,6 @@ int main() {
             x>>=1;
         }
         printf("Logical Address %d: ", i);
-
         for(int l = 0; l < 64; l++){
             printf("%d", bits[i][l]);
         }
@@ -68,34 +67,35 @@ int main() {
 
         printf("\nPhysical Address: ");
         for(int l = 0; l < 64; l++){
-            printf("%d", bits[i][l]);
+            int output = bits[i][l];
+            printf("%d", output);
         }
         int t = 63;
         int w = 0;
+        unsigned long decimal = 0;
+        int cc = 0;
         char hex[16] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
-        pAddress[i][16] = '0';
-        for(int s = 15; s >= 0; s--){
+        for(int s = 3; s >= 0; s--){
             int u = t - 3;
             z = 0;
             w = 0;
             for(; t >= u; t--){
                 if(bits[i][t] == 1){
                     z += (int) pow(2, w);
+                    decimal += (int) pow(2, cc);
                 }
                 w++;
+                cc++;
             }
             pAddress[i][s] = hex[z];
         }
 
-        fwrite(&z, 8, 1, fp2);
 
         printf("\nPhysical Address in hex: 0x");
-        for(int l = 0; l < 16; l++){
+        for(int l = 0; l < 4; l++){
             printf("%c", pAddress[i][l]);
-            char hexAdd = pAddress[i][l];
-            fwrite(&hexAdd, sizeof(hexAdd), 1, fp2);
         }
-
+        fwrite(&decimal, sizeof(unsigned long), 1, fp2);
         i += (int) v;
         p = 0;
         d = 0;
