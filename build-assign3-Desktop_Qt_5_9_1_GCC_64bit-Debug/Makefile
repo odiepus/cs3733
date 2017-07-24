@@ -50,8 +50,14 @@ OBJECTS_DIR   = ./
 
 ####### Files
 
-SOURCES       = ../assign3/main.c 
-OBJECTS       = main.o
+SOURCES       = ../assign3/main.c \
+		../assign3/phypages.c \
+		../assign3/pagetable.c \
+		../assign3/assign3part2.c 
+OBJECTS       = main.o \
+		phypages.o \
+		pagetable.o \
+		assign3part2.o
 DIST          = ../assign3/part1sequence \
 		../assign3/part1testsequence \
 		/opt/Qt/5.9.1/gcc_64/mkspecs/features/spec_pre.prf \
@@ -213,6 +219,7 @@ DIST          = ../assign3/part1sequence \
 		/opt/Qt/5.9.1/gcc_64/mkspecs/features/qt_config.prf \
 		/opt/Qt/5.9.1/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/opt/Qt/5.9.1/gcc_64/mkspecs/features/spec_post.prf \
+		../assign3/.qmake.stash \
 		/opt/Qt/5.9.1/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/opt/Qt/5.9.1/gcc_64/mkspecs/features/toolchain.prf \
 		/opt/Qt/5.9.1/gcc_64/mkspecs/features/default_pre.prf \
@@ -226,7 +233,11 @@ DIST          = ../assign3/part1sequence \
 		/opt/Qt/5.9.1/gcc_64/mkspecs/features/exceptions.prf \
 		/opt/Qt/5.9.1/gcc_64/mkspecs/features/yacc.prf \
 		/opt/Qt/5.9.1/gcc_64/mkspecs/features/lex.prf \
-		../assign3/assign3.pro  ../assign3/main.c
+		../assign3/assign3.pro pagetable.h \
+		phypages.h ../assign3/main.c \
+		../assign3/phypages.c \
+		../assign3/pagetable.c \
+		../assign3/assign3part2.c
 QMAKE_TARGET  = assign3
 DESTDIR       = 
 TARGET        = assign3
@@ -397,6 +408,7 @@ Makefile: ../assign3/assign3.pro /opt/Qt/5.9.1/gcc_64/mkspecs/linux-g++/qmake.co
 		/opt/Qt/5.9.1/gcc_64/mkspecs/features/qt_config.prf \
 		/opt/Qt/5.9.1/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/opt/Qt/5.9.1/gcc_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		/opt/Qt/5.9.1/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/opt/Qt/5.9.1/gcc_64/mkspecs/features/toolchain.prf \
 		/opt/Qt/5.9.1/gcc_64/mkspecs/features/default_pre.prf \
@@ -571,6 +583,7 @@ Makefile: ../assign3/assign3.pro /opt/Qt/5.9.1/gcc_64/mkspecs/linux-g++/qmake.co
 /opt/Qt/5.9.1/gcc_64/mkspecs/features/qt_config.prf:
 /opt/Qt/5.9.1/gcc_64/mkspecs/linux-g++/qmake.conf:
 /opt/Qt/5.9.1/gcc_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 /opt/Qt/5.9.1/gcc_64/mkspecs/features/exclusive_builds.prf:
 /opt/Qt/5.9.1/gcc_64/mkspecs/features/toolchain.prf:
 /opt/Qt/5.9.1/gcc_64/mkspecs/features/default_pre.prf:
@@ -630,6 +643,15 @@ compiler_clean:
 
 main.o: ../assign3/main.c 
 	$(CC) -c $(CFLAGS) $(INCPATH) -o main.o ../assign3/main.c
+
+phypages.o: ../assign3/phypages.c 
+	$(CC) -c $(CFLAGS) $(INCPATH) -o phypages.o ../assign3/phypages.c
+
+pagetable.o: ../assign3/pagetable.c 
+	$(CC) -c $(CFLAGS) $(INCPATH) -o pagetable.o ../assign3/pagetable.c
+
+assign3part2.o: ../assign3/assign3part2.c ../assign3/pagetable.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o assign3part2.o ../assign3/assign3part2.c
 
 ####### Install
 
