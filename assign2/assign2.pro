@@ -5,7 +5,8 @@ CONFIG -= qt
 
 SOURCES += \
     pslibrary.c \
-    assign2.c
+    assign2.c \
+    runall.c
 
 HEADERS += \
     pslibrary.h

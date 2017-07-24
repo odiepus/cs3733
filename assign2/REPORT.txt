@@ -1,0 +1,193 @@
+REPORT QUESTIONS:
+
+1. Solo
+
+2. I believe so. I ran all of the given values and made a few up as well. 
+
+3. N/A
+
+4. Using state machine design greatly simplified the code and allowed for 
+   easier modification for use in different algorithms. Once I became familiar
+   with the state machine code for one algorithm I was able to debug much 
+   faster when applying the state machine code for another algorithm. I really 
+   only needed to focus on the edge cases. 
+
+
+   Note: I wasnt sure how you wanted the output to be formatted.
+         I didnt want to turn in a jumbled mess of R's and w's 
+         without reader knowing what the values were. Thus, I 
+         include the values at the start of a value change. 
+
+
+5. Code Output
+
+Assignment 2 program written by Hector Herrera
+Values: 3 8 7 3 6 3 2
+
+
+FCFS
+RRRRRRRRwwwwwwwRRR
+rrrrrrrrRRRRRRwwwrRR
+0 9 4.5 0.95000
+
+
+SJF
+rrrrrrRRRRRRRRwwwwwwwRRR
+RRRRRRwwwrrrrrRR
+6 5 5.5 0.79167
+
+
+PSJF
+rrrrrrRRRRrrRRRRwwwwwwwRRR
+RRRRRRwwwrRR
+8 1 4.5 0.73077
+
+
+RR
+RRRrrrRRRrrrRRwwwwwwwRRR
+rrrRRRrrrRRRwwwRR
+6 6 6.0 0.79167
+
+Assignment 2 program written by Hector Herrera
+Values: 3 8 7 3 6 7 2
+
+
+FCFS
+RRRRRRRRwwwwwwwRRR
+rrrrrrrrRRRRRRwwwwwwwRR
+0 8 4.0 0.82609
+
+
+SJF
+rrrrrrRRRRRRRRwwwwwwwRRR
+RRRRRRwwwwwwwrRR
+6 1 3.5 0.79167
+
+
+PSJF
+rrrrrrRRRRRRRRwwwwwwwRRR
+RRRRRRwwwwwwwrRR
+6 1 3.5 0.79167
+
+
+RR
+RRRrrrRRRrrrRRwwwwwwwRRR
+rrrRRRrrrRRRwwwwwwwRR
+6 6 6.0 0.79167
+
+Assignment 2 program written by Hector Herrera
+Values: 4 8 7 3 6 1 2
+
+
+FCFS
+RRRRRRRRwwwwwwwRRR
+rrrrrrrrRRRRRRwrrrRR
+0 11 5.5 0.95000
+
+
+SJF
+rrrrrrRRRRRRRRwwwwwwwRRR
+RRRRRRwrrrrrrrRR
+6 7 6.5 0.79167
+
+
+PSJF
+rrrrrrRRrrRRRRRRwwwwwwwRRR
+RRRRRRwrRR
+8 1 4.5 0.73077
+
+
+RR
+RRRRrrrrRRRRwwwwwwwRRR
+rrrrRRRRrrrrRRwRR
+4 8 6.0 0.86364
+
+Assignment 2 program written by Hector Herrera
+Values: 3 3 3 4 2 1 2
+
+
+FCFS
+RRRwwwRRRR
+rrrRRwrrrrRR
+0 7 3.5 0.91667
+
+
+SJF
+rrRRRwwwRRRR
+RRwrrRR
+2 2 2.0 0.91667
+
+
+PSJF
+rrRRRwwwRRRR
+RRwrrRR
+2 2 2.0 0.91667
+
+
+RR
+RRRwwwrrRRRR
+rrrRRwRR
+2 3 2.5 0.91667
+
+Assignment 2 program written by Hector Herrera
+Values: 3 3 2 3 2 1 2
+
+
+FCFS
+RRRwwRRR
+rrrRRwrrRR
+0 5 2.5 1.00000
+
+
+SJF
+rrRRRwwRRR
+RRwrrRR
+2 2 2.0 1.00000
+
+
+PSJF
+rrRRRwwRRR
+RRwrrRR
+2 2 2.0 1.00000
+
+
+RR
+RRRwwRrrRR
+rrrRRwRR
+2 3 2.5 1.00000
+
+Assignment 2 program written by Hector Herrera
+Values: 3 5 2 5 4 1 1
+
+
+FCFS
+RRRRRwwrrRRRRR
+rrrrrRRRRwrrrrR
+2 9 5.5 1.00000
+
+
+SJF
+rrrrRRRRRwwRRRRR
+RRRRwrrrrR
+4 4 4.0 0.93750
+
+
+PSJF
+rrrrRRrRRRwwRRRRR
+RRRRwrR
+5 1 3.0 0.88235
+
+
+RR
+RRRrrrRRwwRRrRRR
+rrrRRRrrrRwrR
+4 7 5.5 0.93750
+
+
+md5sum output
+
+4998a59f278711bc6244f4182714e848  fcfs.all
+48dededb4abb7142b911436242555076  psjf.all
+cbb46cb60ed9d8ddf0e47881b9d72dbd  rr.all
+77f7da53b56c9afcd45148ce7aa0e190  sjf.all
+
